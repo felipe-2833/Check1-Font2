@@ -1,8 +1,8 @@
 //criação variaveis
 let titulo = document.getElementById('name');
-let url = document.getElementById('imagem');
-let descricao = document.getElementById('description');
-let form = document.querySelector('form');
+let url = document.getElementById('url');
+let descricao = document.getElementById('descricao');
+let form = document.getElementById('form');
 
 //funcionamento do evento submit do formulario
 form.addEventListener('submit', function(event) {
@@ -18,24 +18,28 @@ form.addEventListener('submit', function(event) {
         if(item.value === ""){
             mostrarErroPara(item, "Favor preencha o campo com a/o " + item.name)
             valido = false;
-        }else{
+        } else if (item.name == "nome" && item.value.length < 4) {
+            mostrarErroPara(item, "O nome precisa ter no mínimo 4 caracteres");
+            valido = false;
+          }else if (item.name == "descricao" && item.value.length < 4) {
+            mostrarErroPara(item, "A descrição precisa ter no mínimo 4 caracteres");
+            valido = false;
+          }else{
             tudoCerto(item)
+            valido = true;
         }
     }
+    
   }
 
     //add os cards
     if(valido == true){
         let div = document.createElement("div");
-        div.classList.add("item");
-        div.innerHTML = `
-                    <h2>${titulo.value}</h2>
-                    <img src="${url.value}">
-                    <p>
-                        ${descricao.value}
-                    </p>
-                    `;
-        card.appendChild(div);
+        div.classList.add("card");
+        div.innerHTML = `<h2>${titulo.value}</h2>
+                         <img src="${url.value}">
+                        <p>${descricao.value}</p>`;
+        cards.appendChild(div);
     }
 });
 
@@ -49,11 +53,11 @@ form.addEventListener('submit', function(event) {
     
     //muda classe div
     inputSections.className = "input-sections error";
-}
+    }
 
-function tudoCerto(input) {
-    const inputSections = input.parentElement;
-  
-    // Adicionar a classe de sucesso
-    inputSections.className = "input-sections"
-  }
+    function tudoCerto(input) {
+        const inputSections = input.parentElement;
+    
+        //mantem com a mesma classe
+        inputSections.className = "input-sections"
+    }
