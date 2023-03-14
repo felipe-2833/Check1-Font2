@@ -48,19 +48,19 @@
           <form id="form" class="form">
             <div class="input-sections">
               <label for="name">Nome</label>
-              <input type="text" id="name" placeholder="Digite o nome do card" name="nome"/>
+              <input type="text" id="name"  value="" placeholder="Digite o nome do card" name="nome"/>
               <small>Mensagem de erro</small>
             </div>
     
             <div class="input-sections">
-              <label for="url">url</label>
-              <input type="url" id="url" placeholder="Informe a url da imagem" name="url" />
+              <label for="url">Url</label>
+              <input type="url" id="url"  value="" placeholder="Informe a url da imagem" name="url" />
               <small>Mensagem de erro</small>
             </div>
     
             <div class="input-sections">
-              <label for="descrição">descrição</label>
-              <textarea cols="5" rows="8"  type="text" id="descricao" placeholder="Faça uma descrição do card" name="descricao"></textarea>
+              <label for="descrição">Descrição</label></label>
+              <textarea cols="5" rows="8"  type="text" id="descricao"  value="" placeholder="Faça uma descrição do card" name="descricao"></textarea>
               <small>Mensagem de erro</small>
             </div>
     
@@ -68,9 +68,10 @@
           </form>
         </div>
         <div class="container2">
-            <div class="header">
-                <h1>Cards Criados</h1>
+            <div class="header2">
+                <h1>Cards Criados:</h1>
             </div>
+            <div id="cards"></div>
         </div>
 
     </div>
