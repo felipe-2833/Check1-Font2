@@ -2,7 +2,9 @@
 let titulo = document.getElementById('name');
 let url = document.getElementById('url');
 let descricao = document.getElementById('descricao');
+let botao = document.querySelector("button")
 let form = document.getElementById('form');
+
 
 //funcionamento do evento submit do formulario
 form.addEventListener('submit', function(event) {
@@ -15,23 +17,17 @@ form.addEventListener('submit', function(event) {
 
     //verifica cada campo 
     if(item.type !== "submit"){
-        if(item.value === ""){
-            mostrarErroPara(item, "Favor preencha o campo com a/o " + item.name)
-            valido = false;
-        } else if (item.name == "nome" && item.value.length < 4) {
+       if (item.name == "nome" && item.value.length < 4) {
             mostrarErroPara(item, "O nome precisa ter no mínimo 4 caracteres");
             valido = false;
           }else if (item.name == "descricao" && item.value.length < 4) {
             mostrarErroPara(item, "A descrição precisa ter no mínimo 4 caracteres");
             valido = false;
           }else{
-            tudoCerto(item)
-            valido = true;
+            tudoCerto(item);
         }
     }
-    
   }
-
     //add os cards
     if(valido == true){
         let div = document.createElement("div");
@@ -60,4 +56,13 @@ form.addEventListener('submit', function(event) {
     
         //mantem com a mesma classe
         inputSections.className = "input-sections"
+    }
+
+    function mudarBotao(){
+      if(titulo.value && url.value && descricao.value){
+        botao.disabled = false
+        return
+      }
+      botao.disabled = true
+      
     }

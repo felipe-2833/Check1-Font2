@@ -140,7 +140,6 @@ small {
     justify-content: center;
     align-items: center;
   }
-
    /* container */
   .container {
     background-color: #3c3c3c;
@@ -201,8 +200,8 @@ small {
   }
   
   .form button {
-    background-color: #085e74;
-    border: 2px solid #085e74;
+    background-color: #0bafd8;
+    border: 2px solid  #0bafd8;
     color: #fff;
     font-size: 14px;
     width: 100%;
@@ -211,13 +210,15 @@ small {
   }
 
   .form button:hover {
-    background-color: #0bafd8;
-    border: 2px solid  #0bafd8;
-    color: #fff;
-    font-size: 14px;
-    width: 100%;
-    border-radius: 10px;
-    padding: 10px;
+    background-color: #085e74;
+    border: 2px solid #085e74;
+    cursor: pointer;
+  }
+
+  .form button:disabled {
+    background-color: #085e74;
+    border: 2px solid #085e74;
+    cursor: auto;
   }
   
   /* Error */
