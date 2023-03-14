@@ -1,137 +1,14 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    font-family: "Roboto",sans-serif;
-}
-html{
-    scroll-behavior: smooth;
-}
-body{
-            
-	background-color: #f7f7f7;
-	margin: 0;
-	padding: 0;
-}
-h1 {
-    font-size: 32px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-h3 {
-    font-size: 32px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-form {
-    background-color: #fff;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    margin: 0 auto;
-    padding: 30px;
-    max-width: 1200px;
-}
-label {
-    display: block;
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-label span {
-    margin-top : 10px;
-}
-
-small {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    visibility: hidden;
-}
-
-#description {
-    width: 100%;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    font-size: 16px;
-    height:200px;
-    
-}
-
-.texto {
-    width: 100%;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    font-size: 15px;
-}
-.url {
-    width: 100%;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    font-size: 16px;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin: 20px;
-  }
-  
-  
-  .cardImg {
-    width: 100%;
-    height: auto;
-    border-radius: 10px 10px 0 0;
-  }
-
-  .btn-info {
-    background-color: #0077cc;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    transition: all 0.2s ease;
-}
-
-.btn-info:hover {
-    background-color: #005fa3;
-}
-
-.error input{
-    border-color: #e74c3c;
-}
-
-.error small{
-    visibility: visible;
-    color: #e74c3c;
-} */
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
   }
-  
+
+  html{
+    scroll-behavior: smooth;
+  }
+
   body {
     width: 100%;
     min-height: 100vh;
@@ -149,6 +26,7 @@ small {
     max-width: 100%;
     overflow: hidden;
     height: auto;
+    margin-top: 1rem;
   }
   
   .header {
@@ -160,6 +38,7 @@ small {
   .form {
     padding: 20px;
     color: #f0f0f0;
+  
   }
   
   .input-sections {
@@ -236,38 +115,6 @@ small {
     color: #e74c3c;
   }
 
-  /* card */
-
-  .card {
-    display: flex;
-    flex-direction: column;
-    
-    max-width: 300px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin: 20px;
-  }
-  
-  
-  .cardImg {
-    width: 100%;
-    height: auto;
-    border-radius: 10px 10px 0 0;
-  }
-
-  img {
-    margin: 15px 0px;
-  }
-
-  #cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-
   /* container 2 */
 
   .container2 {
@@ -284,3 +131,41 @@ small {
     padding: 20px;
     color: #f0f0f0;
   }
+
+    /* card */
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      
+      max-width: 300px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      margin: 20px;
+      background-color: #3c3c3c;
+      color: #f0f0f0;
+    }
+
+    #cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    #cards img {
+      margin: 0px;
+    }
+
+    #cards p {
+      margin: 0.5rem;
+      margin-top: 0px;
+      color: #a8a6a6;
+    }
+
+    #cards h2 {
+      
+      margin: 0.5rem;
+    }
+    
