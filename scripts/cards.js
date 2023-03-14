@@ -32,8 +32,8 @@ form.addEventListener('submit', function(event) {
     if(valido == true){
         let div = document.createElement("div");
         div.classList.add("card");
-        div.innerHTML = `<h2>${titulo.value}</h2>
-                         <img src="${url.value}">
+        div.innerHTML = `<img src="${url.value}">
+                        <h2>${titulo.value}</h2>
                         <p>${descricao.value}</p>`;
         cards.appendChild(div);
     }
@@ -58,6 +58,7 @@ form.addEventListener('submit', function(event) {
         inputSections.className = "input-sections"
     }
 
+    //função do evento onchange, desabilita e abilita o botão de input
     function mudarBotao(){
       if(titulo.value && url.value && descricao.value){
         botao.disabled = false
