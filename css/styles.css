@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -9,11 +9,11 @@
 html{
     scroll-behavior: smooth;
 }
-main body{
+body{
             
-			background-color: #f7f7f7;
-			margin: 0;
-			padding: 0;
+	background-color: #f7f7f7;
+	margin: 0;
+	padding: 0;
 }
 h1 {
     font-size: 32px;
@@ -44,6 +44,13 @@ label {
 }
 label span {
     margin-top : 10px;
+}
+
+small {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
 }
 
 #description {
@@ -108,3 +115,109 @@ label span {
 .btn-info:hover {
     background-color: #005fa3;
 }
+
+.error input{
+    border-color: #e74c3c;
+}
+
+.error small{
+    visibility: visible;
+    color: #e74c3c;
+} */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(80, 78, 78);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    background-color: #3c3c3c;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 700px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .header {
+    background-color: #3c3c3c;
+    padding: 20px;
+    color: #f0f0f0;
+  }
+  
+  .form {
+    padding: 20px;
+    color: #f0f0f0;
+  }
+  
+  .input-sections {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  .input-sections label {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  
+  .input-sections input {
+    border: 2px solid #f0f0f0;
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .input-sections textarea {
+    border: 2px solid #f0f0f0;
+    display: block;
+    border-radius:10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .input-sections small {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+  }
+  
+  .form button {
+    background-color: #085e74;
+    border: 2px solid #085e74;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  /* Error */
+  
+  .input-sections.error input {
+    border-color: #e74c3c;
+  }
+
+  .input-sections.error textarea {
+    border-color: #e74c3c;
+  }
+  
+  .input-sections.error small {
+    visibility: visible;
+    color: #e74c3c;
+  }
