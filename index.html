@@ -9,25 +9,70 @@
 </head>
 <body>
     
-    <main>
+    <!-- <main>
         <h1>Criação de Personagem</h1>
         <form action="#" method="post">
+            <div> 
             <label for="name">
-                <input type="text" class="texto" id="name" name="name" value="" placeholder="Nome" >
+                <input type="text" class="texto" id="name" name="Titulo" value="" placeholder="Nome" >
             </label>
+            <small></small>
+        </div>
+            <div>
             <label for="imagem">
-                <input type="url" class="url" id="imagem" name="imagem" value="" placeholder="url">
+                <input type="url" class="url" id="imagem" name="Imagem" value="" placeholder="url">
             </label>
-            <br>
+            <small></small>
+        </div>
+            <div> 
             <label for="description">
-                <input type="text" class="texto" id="description" name="description" value="" placeholder="descrição">
+                <input type="text" class="texto" id="description" name="descrição" value="" placeholder="descrição">
             </label>
+            <small></small>
+        </div>
+            <br>
             <button class="btn-info" type="submit" value="Sign up" >sign up</button>
         </form>
     </main>
     <div>
         <h3>cards criados</h3>
         <div id="card"></div>
+    </div> -->
+    <!------------------------------------------------------------------------------------------------------------------------------->
+    <div>
+        <div class="container">
+          <div class="header">
+            <h2>Faça seu Card de Personagem</h2>
+          </div>
+    
+          <form id="form" class="form">
+            <div class="input-sections">
+              <label for="name">Nome</label>
+              <input type="text" id="name" placeholder="Digite o nome do card" name="nome"/>
+              <small>Mensagem de erro</small>
+            </div>
+    
+            <div class="input-sections">
+              <label for="url">url</label>
+              <input type="url" id="url" placeholder="Informe a url da imagem" name="url" />
+              <small>Mensagem de erro</small>
+            </div>
+    
+            <div class="input-sections">
+              <label for="descrição">descrição</label>
+              <textarea cols="5" rows="8"  type="text" id="descricao" placeholder="Faça uma descrição do card" name="descricao"></textarea>
+              <small>Mensagem de erro</small>
+            </div>
+    
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+        <div class="container2">
+            <div class="header">
+                <h1>Cards Criados</h1>
+            </div>
+        </div>
+
     </div>
     <script src="./scripts/cards.js"></script>
 </body>
