@@ -32,9 +32,9 @@ form.addEventListener('submit', function(event) {
     if(valido == true){
         let div = document.createElement("div");
         div.classList.add("card");
-        div.innerHTML = `<img src="${url.value}">
-                        <h2>${titulo.value}</h2>
-                        <p>${descricao.value}</p>`;
+        div.innerHTML = `<div class="img"><img src="${url.value}"></div>
+                        <div class="texto"><h2>${titulo.value}</h2>
+                        <p>${descricao.value}</p></div>`;
         cards.appendChild(div);
     }
 });
