@@ -59,7 +59,14 @@ form.addEventListener('submit', function(event) {
     }
 
     //função do evento onchange, desabilita e abilita o botão de input
+    form.addEventListener("change",function(e){
+      e.preventDefault()
+      mudarBotao()
+      
+    })
+
     function mudarBotao(){
+      
       if(titulo.value && url.value && descricao.value){
         botao.disabled = false
         return
