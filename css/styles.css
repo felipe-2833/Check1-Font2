@@ -137,7 +137,6 @@
     .card {
       display: flex;
       flex-direction: column;
-      
       max-width: 300px;
       background-color: #fff;
       border-radius: 10px;
@@ -156,6 +155,7 @@
     
     #cards img {
       margin: 0px;
+      border-radius: 10px;
     }
 
     #cards p {
@@ -165,7 +165,21 @@
     }
 
     #cards h2 {
-      
       margin: 0.5rem;
     }
     
+    .img{
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      margin: 20px;
+      background-color: #3c3c3c;
+
+    }
+
+    .texto{
+
+    }
