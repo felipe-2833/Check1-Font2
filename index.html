@@ -17,7 +17,7 @@
           <form id="form" class="form">
             <div class="input-sections">
               <label for="name">Nome</label>
-              <input type="text" id="name"  value="" placeholder="Digite o nome do card" name="nome" />
+              <input type="text" id="name"  value="" placeholder="Digite o nome do card" name="nome" maxlength="21" />
               <small>Mensagem de erro</small>
             </div>
     
@@ -29,7 +29,7 @@
     
             <div class="input-sections">
               <label for="descrição">Descrição</label></label>
-              <textarea cols="5" rows="8"  type="text" id="descricao"  value="" placeholder="Faça uma descrição do card" name="descricao" ></textarea>
+              <textarea cols="5" rows="8"  type="text" id="descricao"  value="" placeholder="Faça uma descrição do card" name="descricao" maxlength="350"></textarea>
               <small>Mensagem de erro</small>
             </div>
     
@@ -40,7 +40,7 @@
             <div class="header2">
                 <h1>Cards Criados:</h1>
             </div>
-            <div id="cards"></div>
+            <div id="Containercards"></div>
         </div>
 
     </div>
